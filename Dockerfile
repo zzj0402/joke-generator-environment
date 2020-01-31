@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.0.0.2-gpu
+FROM pytorch/pytorch:1.4-cuda10.1-cudnn7-devel
 
 ENV TZ=Pacific/Auckland
 RUN apt-get update
@@ -21,4 +21,4 @@ RUN apt-get install -y vim htop
 
 WORKDIR /root/
 
-RUN git clone https://github.com/jiriroz/JokeGeneratorSeq2Seq.git
+RUN git clone https://github.com/amoudgl/funnybot.git
