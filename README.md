@@ -20,6 +20,12 @@ docker exec -it [replace this with container id] bash
 pip2 install numpy h5py
 ```
 
+## LuaTorch
+
+```bash
+cd ~/torch && bash install-deps && ./install.sh
+```
+
 ## Preprocess
 
 ```bash

@@ -11,7 +11,6 @@ RUN apt-get install python2.7 python-pip -y
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN rm ~/torch/install-deps
 COPY ./install-deps ~/torch/
-RUN cd ~/torch && bash install-deps && ./install.sh
 
 WORKDIR /root/
 
