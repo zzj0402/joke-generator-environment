@@ -8,8 +8,6 @@ RUN apt-get upgrade -y
 RUN apt-get install -y git-all vim htop sudo
 RUN apt-get install python2.7 python-pip -y
 
-RUN pip2 install numpy h5py
-
 RUN git clone https://github.com/torch/distro.git ~/torch --recursive
 RUN rm ~/torch/install-deps
 COPY ./install-deps ~/torch/

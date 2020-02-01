@@ -14,6 +14,12 @@ Keep the docker container id and then:
 docker exec -it [replace this with container id] bash
 ```
 
+## Dependency
+
+```bash
+pip2 install numpy h5py
+```
+
 ## Preprocess
 
 ```bash
